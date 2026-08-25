@@ -11,6 +11,7 @@ console.log(str1.charAt(-2)); //dooesn't support -ve index, actual value empty s
 
 //at(): -ve index support krta h
 console.log(str1.at(-1));
+//test
 
 //str[index] vs charAt()
 console.log(str1[10]); //undefined
