@@ -97,7 +97,7 @@ let str7 = "hi hello hi";
 console.log(str7.replaceAll("hi", "hey"));
 
 
-//split(): string ko split krke array me convert krta h
+//*split(): string ko split krke "array" me convert krta h
 let str8 = "Apple,Banana,Mango";
 let result = str8.split(",");
 console.log(result); //[ 'Apple', 'Banana', 'Mango' ]

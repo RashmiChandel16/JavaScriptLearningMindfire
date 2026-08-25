@@ -77,6 +77,7 @@ console.log(resull); //20
 //ye method array ke sabhi elements ko , lgake ek string me coonvert kr deta h
 const myArr = [1, 2, 3];
 const newArr = myArr.join();
+//join() ka default separator comma , hota h. isiliye ye string jo de rha vo 1,2,3 de rha agar tumhe 123 string chahiye without comma to join("") krdo
 console.log(newArr); //1,2,3--> this is a single string
 console.log(typeof(newArr)); //string
 
