@@ -55,6 +55,8 @@ let b=1;
 let c=a+b;
 function Fibonacci(num){
     for(i=0; i<=num; i++){
+    console.log(a);
+    a=b;
         
 
     }
