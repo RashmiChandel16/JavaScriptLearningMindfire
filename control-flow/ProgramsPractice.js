@@ -182,7 +182,7 @@ i=2->1space 7star
 i=3->2space 5star
 i=4->3space 3star
 i=5->4space 1star
-     i-1    
+     i-1
 */
 for(let i=1; i<=5; i++){
 
