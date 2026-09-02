@@ -1,5 +1,5 @@
 //21line
-//name, age, course are key/properties and Rashmi, 25 JvaScript these are values
+//name, age, course are key/properties and Rashmi, 25, JavaScript these are values
 let student = {
     name: "Rashmi",
     age: 25,
@@ -163,11 +163,3 @@ class Car {
 }
 let car1 = new Car("Toyota");
 console.log(car1);  //Car { brand: 'Toyota' }
-
-
-
-
-
-
-
-
