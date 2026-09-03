@@ -52,16 +52,14 @@ console.log(isPrime(7));
 //concept: next number = previous two numbers ka sum
 let a=0;
 let b=1;
-let c=a+b;
 function Fibonacci(num){
     for(i=0; i<=num; i++){
     console.log(a);
-    a=b;
-        
-
-    }
+    
+    
 
 }
+Fibonacci(10);
 
 
 //reverse a number
