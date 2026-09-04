@@ -53,12 +53,13 @@ console.log(isPrime(7));
 let a=0;
 let b=1;
 function Fibonacci(num){
-    for(i=0; i<=num; i++){
+    for(i=1; i<=num; i++){
     console.log(a);
-    
-    
-
-}}
+    let c = a+b;
+    a=b;
+    b=c;
+    }
+}
 Fibonacci(10);
 
 
