@@ -79,8 +79,28 @@ console.log(a);  //ReferenceError (bcz Function parameters are local variables o
 
 //function returning object
 function test(name, age){
-    return {n1: name,
+    return { 
+            n1: name,
             a1: age
            };
 }
 console.log(test("Rashmi", 28));
+
+
+function demo(){
+    return {
+            age: 28,
+            f1: function(){
+                console.log("rashmi");
+            }
+    };
+}
+let result = demo();
+console.log(result);  //{ age: 28, f1: [Function: f1] }
+console.log(result.age);
+console.log(result.f1); //[Function: f1]
+console.log(result.f1()); //rashmi
+                          //undefined
+
+
+//block and outside of block and hoisting
