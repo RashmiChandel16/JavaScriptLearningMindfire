@@ -37,15 +37,17 @@ arr6[0]();  //hello
 
 //2nd Method: creating array using Array() constructor:
 let Numbers = new Array(10, 20, 30); //OR let numbers = Array(10, 20, 30);
-console.log(Numbers);
+console.log(Numbers);  //[ 10, 20, 30 ]
 
 //special case when we create array using Array() constructor and pass only one numeric value
 //Note: this shows the difference b/w creating array using both methods
 let arr1 = new Array(5);
 console.log(arr1); //[ <5 empty items> ] //Note: agar Array constructor ke andar single numeric value rkhenge to vo utni length ka empty array dega
 console.log(arr1.length); //5
-let arr2 = new Array(5,6).fill(0); //fill()-> iske andar jo b value denge it will replace all array values with this value
-console.log(arr2); //[ 0, 0 ]
+let arr2 = new Array(2,3);
+console.log(arr2);  //[ 2, 3 ]
+let arr3 = new Array(5,6).fill(0); //fill()-> iske andar jo b value denge it will replace all array values with this value
+console.log(arr3); //[ 0, 0 ]
 
 //Array.of() creates an array from the arguments passed to it.
 let arry = Array.of(10, 20, 30);

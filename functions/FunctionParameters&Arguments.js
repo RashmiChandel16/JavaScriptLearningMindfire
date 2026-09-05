@@ -27,12 +27,21 @@ function mul(a,b){
 function addition(a,b){
     console.log(a, b); //10 20
     console.log(arguments); //[Arguments] { '0': 10, '1': 20, '2': 30 }
-    //bcz aruments array like object h js me
+    //bcz arguments array like object h js me
     console.log(arguments[0]);  //10
     console.log(arguments[1]);  //20
     console.log(arguments[2]);  //30
 }
 addition(10,20,30);
+
+
+/*situation: what happens, If a function is defined with one parameter, but you call it without passing any argument: 
+then the parameter gets the value undefined. To ignore this case, that's why default parameter concept came. */
+function add(a) {
+    console.log(a + 10);  //NaN(bcz undefined+10)
+}
+add();
+
 
 //default parameter: A parameter can have a default value if the caller doesn't provide a value.
 function defpFunc(name = "guest"){
