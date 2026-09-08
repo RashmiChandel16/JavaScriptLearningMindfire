@@ -97,7 +97,7 @@ try{
 
 
 /*throw
--->JavaScript allows us to create our own error using throw.
+-->JavaScript allows us to create our own error using throw. (CUSTOM ERROR)
 -->throw new Error("Something went wrong");   This line manually generates an error.
 -->-throw is useful for validation.
 */
@@ -152,7 +152,7 @@ catch(error){
 }
 
 
-//Different type of errors:
+//Different type of errors: INBUILT ERROR:
 //1. ReferenceError: Using a variable that doesn't exist:
 try{
     console.log(name);
