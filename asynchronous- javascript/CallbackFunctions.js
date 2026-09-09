@@ -8,14 +8,14 @@ console.log("Bye");
 //But what if we want to run a function later:
 console.log("Start");
 setTimeout(function () {      //Here this anonymous function is given to setTimeout function so that it can be run later(after 2secs), here this anonymous function is called callback function
-    console.log("hello");
+    console.log("hello");     //setTimeout ne callback ko 2 seconds baad chalane ke liye schedule kiya.
 }, 2000);
 console.log("End");
 //outpot: first it will print Start, then End, then printing hello after 2secs(bcz we told js that run this function after 2secs)
 
 
 //A callback function is a function that is passed as an argument to another function and is called later by that function.
-//A callback is a function that we give to another function, so that it can be called later.
+//A callback is a function that we give to another function, so that it can be called later by that function.
 function greet(){
     console.log("hello");
 }
@@ -106,6 +106,27 @@ getUser(function (user) {
 
     });
 
+});
+
+//more simple example:
+function step1(callback) {
+    console.log("Step 1");
+    callback();
+}
+
+function step2(callback) {
+    console.log("Step 2");
+    callback();
+}
+
+function step3() {
+    console.log("Step 3");
+}
+
+step1(function() {
+    step2(function() {
+        step3();
+    });
 });
 //This becomes deeply nested. This is called: Callback Hell. 
 //(Too many nested callbacks become difficult to read, maintain, and handle errors in.)
