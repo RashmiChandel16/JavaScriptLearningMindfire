@@ -15,7 +15,6 @@ console.log("End");
 
 
 //A callback function is a function that is passed as an argument to another function and is called later by that function.
-//A callback is a function that we give to another function, so that it can be called later by that function.
 function greet(){
     console.log("hello");
 }

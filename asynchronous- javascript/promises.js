@@ -57,7 +57,7 @@ let promise = new Promise((resolve, reject) => {
 //.cathc() handles the rejected promise.
 promise
 .then((result) => {
-    console.log(result)
+    console.log(result);
 })
 .catch((error) => {
     console.log(error);
@@ -67,12 +67,13 @@ promise
 //.then() runs when the Promise is successfully fulfilled:
 let promise = new Promise((resolve, reject) => {
     resolve("hello");
-})
+});
+promise
 .then((result) => {
     console.log(result);
 })
 .catch((error) => {
-    console.log("fail");
+    console.log(error);
 });
 
 
@@ -100,7 +101,7 @@ promise
     console.log("finished");
 });
 
-
+//*Rememeber This*
 //Why do we need Promises?
 //Consider an asynchronous task:
 console.log("start");
@@ -178,6 +179,7 @@ promise
 
 //Promise.all()   :   Promise.all() succeeds only when all Promises succeed.
 //Promise.all() takes multiple Promises, starts/observes them together, and returns one Promise that fulfills when all of them fulfill. If any one rejects, the combined Promise rejects.let p1 = Promise.resolve("A");
+//Multiple Promises ko ek saath handle karta hai aur tab result deta hai jab saare Promises fulfill ho jaate hain.
 let p2 = Promise.resolve("B");
 let p3 = Promise.resolve("C");
 //You want to wait for all three:

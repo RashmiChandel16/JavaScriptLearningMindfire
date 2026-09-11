@@ -20,7 +20,6 @@ console.log("C");
 //It does NOT freeze the whole program.
 //so A then C then after 2secs, Promise resolves then the async function continues
 
-
 /*
 Points to remember:
 ------------------
@@ -30,6 +29,7 @@ Points to remember:
 4. await doesn't block the entire JavaScript program
    It pauses the current async function, while other JavaScript work can continue.
 */
+
  
 async function test() {
     let result = await Promise.resolve("Hello"); //here if we remove await then it will give the promise itself, using await will give the result of the promise like in then
@@ -87,6 +87,14 @@ const test1 = async () => {
  };
  test1();
 
+ //Async await with API
+async function getData() {
+    let response = await fetch("https://dummyjson.com/users");
+    let data = await response.json();
+    console.log(data);
+ }
+getData();
+
  
 //Eg: Behavior without await & with await
 async function f10(a,b){
@@ -94,6 +102,7 @@ async function f10(a,b){
  console.log(result);
  };
 f10(1,2);
+console.log("hello");
 
 async function f10(a, b) {
     let result = await new Promise((resolve) => {
