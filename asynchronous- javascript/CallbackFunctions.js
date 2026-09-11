@@ -7,7 +7,7 @@ console.log("Bye");
 
 //But what if we want to run a function later:
 console.log("Start");
-setTimeout(function () {      //Here this anonymous function is given to setTimeout function so that it can be run later(after 2secs), here this anonymous function is called callback function
+setTimeout(function () {      //Here this anonymous function is given to setTimeout function so that it can be run later(after 2secs), here this anonymous function is called callback function, bcz it is paased inside setTimeout function as an argument
     console.log("hello");     //setTimeout ne callback ko 2 seconds baad chalane ke liye schedule kiya.
 }, 2000);
 console.log("End");

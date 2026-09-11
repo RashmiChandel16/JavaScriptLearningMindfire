@@ -67,9 +67,12 @@ promise
 //.then() runs when the Promise is successfully fulfilled:
 let promise = new Promise((resolve, reject) => {
     resolve("hello");
-});
-promise.then((result) => {
+})
+.then((result) => {
     console.log(result);
+})
+.catch((error) => {
+    console.log("fail");
 });
 
 
@@ -174,7 +177,7 @@ promise
 
 
 //Promise.all()   :   Promise.all() succeeds only when all Promises succeed.
-let p1 = Promise.resolve("A");
+//Promise.all() takes multiple Promises, starts/observes them together, and returns one Promise that fulfills when all of them fulfill. If any one rejects, the combined Promise rejects.let p1 = Promise.resolve("A");
 let p2 = Promise.resolve("B");
 let p3 = Promise.resolve("C");
 //You want to wait for all three:
@@ -182,6 +185,7 @@ Promise.all([p1, p2, p3])
     .then((result) => {
         console.log(result);
     });
+//check using set timeout???    
 
 //Promise.allSettled()   :    waits for all Promises, whether they succeed or fail.
 Promise.allSettled([p1, p2, p3]);
