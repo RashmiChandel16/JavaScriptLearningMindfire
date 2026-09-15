@@ -131,3 +131,31 @@ const test = (...args) => {
 };
 test(10, 20, 30);  //[ 10, 20, 30 ]
 
+
+//async await use in arrow function:
+const getDta = async () => {
+    console.log("start");
+    let result = await new Promise((resolve) => {
+        setTimeout(() => {
+            resolve("data received");
+        }, 2000);
+    });
+    console.log(result);
+    console.log("end");
+};
+getDta();
+console.log("hello");
+
+//parameterised arrow function with async await:
+const add = async (a,b) => {
+    let result = await new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(a+b);
+        }, 2000);
+    });
+    return result;
+};
+
+add(10,20).then((result) => {
+    console.log(result);
+});
