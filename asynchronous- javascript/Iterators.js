@@ -128,9 +128,7 @@ console.log(iterator.next());   //{ value: undefined, done: true }
     value: ...,
     done: ...
 }
---> when we do arr[Symbol.iterator](), then array gives us an iterator
-
-
+--> when we do arr[Symbol.iterator](), then array gives us an iterator*/
 
 
 
