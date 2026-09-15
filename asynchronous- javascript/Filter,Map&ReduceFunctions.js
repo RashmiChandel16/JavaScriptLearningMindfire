@@ -49,3 +49,6 @@ let result = numbers.reduce((sum, num) => {
     return sum+num;
 }, 0);
 console.log(result);
+
+
+//practice problems for each filter, map, reduce and all together
