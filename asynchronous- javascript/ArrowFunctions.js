@@ -133,6 +133,7 @@ test(10, 20, 30);  //[ 10, 20, 30 ]
 
 
 //async await use in arrow function:
+//async makes the function return a Promise, while await waits for a Promise inside that async function.
 const getDta = async () => {
     console.log("start");
     let result = await new Promise((resolve) => {

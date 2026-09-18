@@ -66,6 +66,27 @@ map.set(person, "Employee");
 console.log(map.get(person));
 
 
-//difference b/w Map and objects
+//difference b/w Map and objects??? imp
 //See more and do some practical examples
 
+/*Suppose you want to store a person's information.
+
+With an Object:
+
+let user = {
+    name: "Rashmi",
+    age: 25
+};
+
+That's fine.
+
+But sometimes you need a dedicated key-value collection, especially when:
+
+keys can be numbers, objects, functions, etc.
+you frequently add/remove entries
+you need to check whether a key exists
+you need the number of entries
+you want convenient Map methods
+
+That's where Map is useful.
+*/

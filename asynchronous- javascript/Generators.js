@@ -72,3 +72,33 @@ let fruit = fruits();
 console.log(fruit.next().value); // Apple
 console.log(fruit.next().value); // Mango
 console.log(fruit.next().value); // Banana
+
+
+//generate dummy data for automation using generator
+//differnec b/w iterator and generator
+//generator is advance form of iterator, all geneartor are  iterator but all iterator are not generator
+
+
+function* userGenerator() {
+    yield {
+        name: "Rashmi",
+        email: "rashmi@test.com",
+        password: "Test@123"
+    };
+
+    yield {
+        name: "Priya",
+        email: "priya@test.com",
+        password: "Test@456"
+    };
+
+    yield {
+        name: "Neha",
+        email: "neha@test.com",
+        password: "Test@789"
+    };
+}
+let users = userGenerator();
+console.log(users.next().value);
+console.log(users.next().value);
+console.log(users.next().value);
