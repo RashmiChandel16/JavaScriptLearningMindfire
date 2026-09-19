@@ -1,3 +1,7 @@
+//A module is simply a JavaScript file whose code can be shared with other files.
+//Export means: I want to make this code available to another file.
+//Import means: I want to use code that another file has exported.
+
 /*
 Why do we need modules?
 Imagine you have one big JavaScript file:
@@ -24,6 +28,7 @@ app.js      → Main code
 */
 
 
+
 /*
 A module is a separate JavaScript file containing code that can be reused by other files.
 For example:
@@ -40,11 +45,13 @@ module.exports = Employee;   (means I want to make Employee available to other f
 Now, How do we use the exported class??
 suppose we have created another file:
 app.js 
-const Employee = require("./Employee");   (means "Bring the exported code from Employee.js into this file")
+const Employee = require("./Employee");   (means Go to Employee.js, get whatever it exported, and store it in Employee variable)
                                           (./ means Look for Employee.js in the "current folder")
 const employee = new Employee();           
 employee.work()
 */
+
+
 
 /*
 Suppose Employee.js has two things:
@@ -69,6 +76,7 @@ const { Employee, greet } = require("./Employee");
 employee.work();
 greet();
 */
+
 
 
 /*Note:

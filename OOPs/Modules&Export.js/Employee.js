@@ -4,4 +4,4 @@ class Employee{
     }
 }
 
-module.export = Employee;
+module.exports = Employee;    //means i am exporting the Employee class from this file
