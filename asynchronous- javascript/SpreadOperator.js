@@ -89,9 +89,9 @@ function add(...numbers){
 add(10,20,30);   //[ 10, 20, 30 ]
 
 function test(a, b, ...rest) {
-    console.log(a);
-    console.log(b);
-    console.log(rest);
+    console.log(a);  //10
+    console.log(b);  //20
+    console.log(rest);   //[ 30, 40, 50 ]
 }
 test(10, 20, 30, 40, 50);
 
