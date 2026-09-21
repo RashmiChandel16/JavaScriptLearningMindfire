@@ -49,7 +49,7 @@ user.greet();  //Hello Rashmi
 
 
 
-//Playwright example: will see it later:
+/*Playwright example: will see it later:
 class LoginPage {
     constructor(page) {
         this.page = page;
@@ -62,7 +62,7 @@ class LoginPage {
 }
 const loginPage = new LoginPage(page);
 
-/*What happens?
+What happens?
 
 new LoginPage(page)
         ↓
