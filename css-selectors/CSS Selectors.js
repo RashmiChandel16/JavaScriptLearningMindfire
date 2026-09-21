@@ -50,4 +50,6 @@ CSS Selector: a#nav-hamburger-menu
 6. Group selector
 Syntax: input, button               (means Select all matching input AND button elements (this denotes or operation))
 Eg: div, #login, #signup                 (represents elements matching either selector. But be careful: if both elements exist, the locator can match multiple elements)
-Element: 
+
+
+*/
