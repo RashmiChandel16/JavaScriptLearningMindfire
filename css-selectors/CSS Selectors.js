@@ -51,5 +51,6 @@ CSS Selector: a#nav-hamburger-menu
 Syntax: input, button               (means Select all matching input AND button elements (this denotes or operation))
 Eg: div, #login, #signup                 (represents elements matching either selector. But be careful: if both elements exist, the locator can match multiple elements)
 
+//see example
 
 */
