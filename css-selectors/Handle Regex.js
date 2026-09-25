@@ -80,7 +80,8 @@ Practice these with test(), match(), and replace()
 let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 console.log(emailPattern.test("rashmi@gmail.com"));  //true
 console.log(emailPattern.test("rashmi@gmail"));   //false
-/*^              → start
+/*
+^              → start
 [^\s@]+        → one or more characters except space/@
 @              → @
 [^\s@]+        → one or more characters except space/@

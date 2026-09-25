@@ -25,3 +25,4 @@ Last page   = Next should normally be disabled
 Website used: https://datatables.net/examples/core/basic_init/alt_pagination.html?utm_source=chatgpt.com
 CSS selector: .dt-paging button:nth-of-type()
 CSS selector for current active page: .dt-paging .dt-paging-button.current or .dt-paging button.dt-paging-button.current
+*/
