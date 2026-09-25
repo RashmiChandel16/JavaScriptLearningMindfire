@@ -120,8 +120,8 @@ input[type="text"] + input[type="password"]       (Find the password input immed
 
 Practical Examples:
 Website used: https://www.flipkart.com/
-Element: For You
-CSS combinator: .css-g5y9jx.r-18u37iz [data-observerid-ecb4892a-4358-4200-9db9-7b3e53c79ae4="440cd28b-66c5-4e07-808c-2f8a00ff4486"]
+Element: Contact Us
+CSS combinator: .x3q9HG [aria-label="Contact Us"]
 
 Element: Login 
 CSS combinator: .wszdrO>[title="Login"]
