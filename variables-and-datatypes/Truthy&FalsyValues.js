@@ -11,7 +11,7 @@ Boolean-->doubt??
 */
 
 //Boolean js ka built in function/obj h and function itself truthy hota h
-//ye upar j falsy h inke alaca baki sb truthy
+//ye upar jo falsy h inke alaca baki sb truthy
 if(Boolean)
 {
     console.log("print hoga")
@@ -95,3 +95,4 @@ console.log(0 && 20);  //0
 console.log("Hello" && "World"); //World
 console.log("" && "Hello");  //""
 console.log(10 && 20 && 0 && 30); //0
+

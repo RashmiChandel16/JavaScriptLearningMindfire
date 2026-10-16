@@ -44,9 +44,26 @@ function isPrime(num){
             return `${num} is not a prime no`;
         }
     }
-    return `${num} is not a prime no`;
+    return `${num} is a prime no`;
 }
-console.log(isPrime(7));
+console.log(isPrime(2));
+
+let num = 2;
+let isPrime = true;
+if (num <= 1) {
+    isPrime = false;
+}
+for (let i = 2; i < num; i++) {
+    if (num % i === 0) {
+        isPrime = false;
+        break;
+    }
+}
+if (isPrime) {
+    console.log("Prime Number");
+} else {
+    console.log("Not a Prime Number");
+}
 
 //Fibonacci series print krao
 //concept: next number = previous two numbers ka sum

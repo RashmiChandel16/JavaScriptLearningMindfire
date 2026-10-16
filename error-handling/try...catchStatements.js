@@ -28,7 +28,7 @@ finally{
     console.log("i will run always whether error accurs or not");
 }
 console.log("Hi");
-//flow of above code: 23 line executes, then error occured in try block, but there is not catch block to hadle the error, then finally will execute, and after that error will be shown bcz no catch to hadle the error and line 31 will not execute.
+//flow of above code: 23 line executes, then error occured in try block, but there is not catch block to hadle the error, then finally will execute, and after that error will be shown bcz no catch to handle the error and line 31 will not execute.
 
 console.log("Start");
 try{                           
@@ -56,7 +56,7 @@ console.log("5");        //5
 
 
 /*Note:  1. console.log(error): this gives whole error. 
-         2. consle.log(error.name): this gives what type of error is occured.
+         2. console.log(error.name): this gives what type of error is occured.
             Common error names: ReferenceError
                                 TypeError
                                 RangeError
@@ -115,7 +115,7 @@ try{
 
 //Why we use throw-->
 //suppose we have age 15 and we want the age to be atleast 18:
-let age = 15;
+let age = 19;
 try{
     if(age<18){
        throw new Error("You must be 18 or older");     //this is generating error ,manually
@@ -225,7 +225,7 @@ try{
 catch{
     console.log("outer catch");
 }
-//Note: Output: inner catch  (Reason: bcz inner catch handled the error so id didn't reach the outer catch)
+//Note: Output: inner catch  (Reason: bcz inner catch handled the error so it didn't reach the outer catch)
 //What if inner catch doesn't handle it-->
 try{
     try{

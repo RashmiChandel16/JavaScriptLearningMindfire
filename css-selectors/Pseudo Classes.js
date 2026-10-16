@@ -69,6 +69,21 @@ CSS selector: .x3q9HG>div:first-of-type>a:nth-of-type(4)
 
 
 
+<ul>
+    <li>Apple</li>
+    <li>Banana</li>
+    <ul>
+        <li>Mango</li>
+    </ul>
+    <li>Orange</li>
+</ul>
+
+li:nth-of-type(3)	Orange means li tag vale child hi count krega
+li:nth-child(3)	Nothing    means sare tag vale child line se count krega
+ul:nth-child(3)	The nested <ul>
+
+
+
 
 
 

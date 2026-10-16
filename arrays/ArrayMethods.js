@@ -70,7 +70,7 @@ console.log(resul); //20
 //findIndex() first matching element ka index return karta hai.
 const arryyy = [10, 20, 30, 20, 50]
 const resull = arryyy.findIndex(num=> num > 15);
-console.log(resull); //20
+console.log(resull); //1
 
 
 //join()  --> existing array ko modify ni krega

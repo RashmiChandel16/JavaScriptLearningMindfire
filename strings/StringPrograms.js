@@ -8,11 +8,11 @@ let str = "helloo";
 for(let ch of str){
     console.log(ch);
 }
-//if we dont want to print the repeated character:
+//if we dont want to print the repeated character: ???????
 let str = "banana"   //b a n hi print ho bs
 let empStr = "";
 for(let i=0; i<str.length; i++){
-    if(!empStr.includes(str[i])){   //agar empStr me str[i ni h tbi andar jao
+    if(!empStr.includes(str[i])){   //agar empStr me str[i] ni h tbi andar jao
        empStr = empStr + str[i];
        console.log(str[i]);
     }
@@ -21,7 +21,7 @@ for(let i=0; i<str.length; i++){
 
 
 //reverse a string:
-let str = "ram";
+let str = "ram nivas";
 let revStr = "";
 for(let i=str.length-1; i>=0; i--){
     revStr = revStr + str[i];
@@ -32,7 +32,7 @@ let str = "ram";
 console.log(str.split("").reverse().join(""));
 
 
-//count vowels:
+//count vowels in a String:
 let str = "Rashmi";
 str = str.toLowerCase();
 let count = 0;
@@ -114,5 +114,13 @@ console.log(str.replaceAll('T','B'));    //BABA
 let str = "Hello Rashmi Chandel";
 console.log(str.replaceAll(" ",""));
 
-//
+
+//Find duplicate characters
+let str = "hello";
+let str2 = "";
+for(let ch of str){
+   if(str2.includes(ch)){
+    str2=str2+ch;
+   }
+}
 

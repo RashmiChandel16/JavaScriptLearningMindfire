@@ -9,7 +9,7 @@ greet("Rashmi");
 
 
 function add(a, b){
-    console.log("addition function")
+    console.log("addition function");
     return a + b;
 }
 console.log(add(10,20));
@@ -21,7 +21,8 @@ console.log(result);
 function mul(a,b){
     console.log(a,b);
 }
-(mul(10)); //10 undefined
+console.log(mul(10)); //10 undefined
+                      //undefined
 
 //if we pass extra arguments:-
 function addition(a,b){

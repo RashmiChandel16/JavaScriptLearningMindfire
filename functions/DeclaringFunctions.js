@@ -72,6 +72,7 @@ meet();
 
 
 //Nested Function Declaration
+let x =20;
 function outer(){
     let x = 10;
     function inner(){
@@ -79,4 +80,5 @@ function outer(){
     }
     inner();
 }
+console.log(x)
 outer(); //10

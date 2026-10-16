@@ -71,6 +71,9 @@ console.log(typeof seatno); //undefined
 console.log(null == undefined);  //true
 console.log(null === undefined); //false
 
+console.log("" == undefined); //false
+console.log(""==null); //false
+
 //function is not returning anything only print kra rha
 function test() {
     console.log("hello");

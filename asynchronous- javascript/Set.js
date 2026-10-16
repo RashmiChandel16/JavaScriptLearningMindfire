@@ -38,7 +38,7 @@ console.log(setVar);  //Set(0) {}
 let numbers = new Set([10, 20, 30]);
 console.log(numbers.size);  //3
 
-//NOTE: Set does not have indexes  ,you can use methods or iterate through it.
+//NOTE: Set does not have indexes, But you can use methods or iterate through it.
 let numbers = new Set([10, 20, 30]);
 console.log(numbers[0]);   //undefined
 

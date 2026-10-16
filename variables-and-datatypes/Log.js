@@ -26,8 +26,8 @@ console.log(10+'10');
 console.log(typeof(5+6+"7"+8+9));  
 console.log(typeof(10-"20"));
 console.log(typeof("10"-20+30));
-console.log(10+"20"-5);
-console.log(10-"20"+5);
+console.log(typeof(10+"20"-5));
+console.log(typeof(10-"20"+5));
 
 console.log("Hello"); //to print normal information
 console.error("Error"); //error display krne ke liye

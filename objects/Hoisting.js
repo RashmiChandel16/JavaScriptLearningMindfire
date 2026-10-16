@@ -11,11 +11,11 @@ var b;
 
                   
 //2. let                --> let hoist to hota h but initialize ni hota memory phase me(jaise var undefined se initialize ho jata tha) balki tdz me chla jata h  
-//                      --> Matlab memory me a ka existence h, but usko value access karne ki permission nahi hai jab tak declaration/initialization line execute nahi ho jati. Is period ko TDZ khte h
+//                      --> Matlab memory me c ka existence h, but usko value access karne ki permission nahi hai jab tak declaration/initialization line execute nahi ho jati. Is period ko TDZ khte h
 console.log(c);         //ReferenceError: Cannot access 'c' before initialization
 let c;             /*  let c; --> memory mein binding to create hai
-                            Lekin x ko initialize nahi kiya gaya.
-                            Jab tak ye line nahi aati: let c = 20; tab tak x ko access nahi kar sakte.
+                            Lekin c ko initialize nahi kiya gaya.
+                            Jab tak ye line nahi aati: let c = 20; tab tak c ko access nahi kar sakte.
                             Program start
                             ↓
                             Memory creation

@@ -9,6 +9,7 @@ console.log(fruits[-1]); //undefined
 let arr = [10, 20, 30];
 console.log(arr.at(-1)); //last element
 console.log(arr.at(-2)); //2nd last elemnt
+console.log(arr.at(0)); //10
 
 
 //using for loop
@@ -60,7 +61,7 @@ console.log(Arr[0][0][1]);  //20
 let student = {
     name: "Rashmi",
     marks: [70, 80, 90]  
-}
+};
 console.log(student.marks); //[ 70, 80, 90 ]
 console.log(student.marks[0]); //70
 

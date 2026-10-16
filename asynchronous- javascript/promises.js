@@ -77,7 +77,7 @@ promise
 });
 
 
-//.cathc() handles the rejected promise:
+//.catch() handles the rejected promise:
 let promise = new Promise((resolve, reject) => {
     reject("something went wrong");
 });

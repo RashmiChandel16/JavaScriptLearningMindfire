@@ -8,7 +8,7 @@ reduce → combine everything into one result */
 //it does not modify the original array.
 let numbers = [1, 2, 3, 4];
 let newArr = numbers.map((num) => {
-    return num*2
+    return num*2;
 });
 //short version: let newArr = numbers.map(num => num*2);
 console.log(newArr);  //[ 2, 4, 6, 8 ]
